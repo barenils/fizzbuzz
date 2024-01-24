@@ -1,3 +1,9 @@
+if (!requireNamespace("microbenchmark", quietly = TRUE)) {
+  # If not installed, install the 'microbenchmark' package
+  install.packages("microbenchmark")
+}
+
+
 library(microbenchmark)
 
 fizzbuzz <- function(len_fizz) { # Original fizzbuzz which does not save output 

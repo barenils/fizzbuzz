@@ -1,4 +1,10 @@
-using BenchmarkTools
+try
+    import BenchmarkTools
+catch
+    # If not installed, install the 'BenchmarkTools' package
+    import Pkg
+    Pkg.add("BenchmarkTools")
+end
 
 function fizzbuzz(len_fizz)
     # Original fizzbuzz which does not save output
